@@ -1,2 +1,2 @@
-'# -*- coding: utf-8 -*-
-print（"周思源"）'
+# -- coding: utf-8 -- 
+print("周思源")
