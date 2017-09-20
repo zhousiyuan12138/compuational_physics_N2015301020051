@@ -1,1 +1,1 @@
-![zhousiyuan](https://www.zybuluo.com/static/img/logo.png)
+![](https://www.zybuluo.com/static/img/logo.png)
