@@ -1,3 +1,6 @@
+用turtle函数画出自己的名字，移动名字的同时清屏
+-
+源代码如下
 ```python
 import turtle
 for i in range(20):
