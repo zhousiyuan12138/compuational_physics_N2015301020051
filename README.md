@@ -1,7 +1,12 @@
-# Homework List
+# Welcome to My Homework List！
 ![我的头像](https://github.com/zhousiyuan12138/compuational_physics_N2015301020051/blob/master/1.jpg)
 ## 姓名：周思源 学号：2015301020051
 
-- [x] [Exercise_01: 拼出自己的名字](https://github.com/zhousiyuan12138/compuational_physics_N2015301020051/blob/master/Exercise_01.md)
-- [x] [Exercise_02: 让名字动起来](https://github.com/zhousiyuan12138/compuational_physics_N2015301020051/blob/master/Exercise_02.md)
-- [x] [Exercise_03: exercise 1.2 from the textbook](https://github.com/zhousiyuan12138/compuational_physics_N2015301020051/tree/master/Exercise%2003)
+## Homework_1
+- [x] [拼出自己的名字](https://github.com/zhousiyuan12138/compuational_physics_N2015301020051/blob/master/Exercise_01.md)
+
+## Homework_2
+- [x] [让名字动起来](https://github.com/zhousiyuan12138/compuational_physics_N2015301020051/blob/master/Exercise_02.md)
+
+## Homework_3
+- [x] [exercise 1.2 from the textbook](https://github.com/zhousiyuan12138/compuational_physics_N2015301020051/tree/master/Exercise%2003)
