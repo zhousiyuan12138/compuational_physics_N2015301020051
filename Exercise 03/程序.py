@@ -1,4 +1,3 @@
-```python
 import numpy as np 
 
 import matplotlib.pyplot as plt
@@ -30,4 +29,3 @@ plt.ylabel("x(m)")
 plt.legend()  
 
 plt.show() 
-```
