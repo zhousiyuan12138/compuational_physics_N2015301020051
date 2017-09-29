@@ -1,6 +1,6 @@
 # Welcome to My Homework List！
 ![我的头像](https://github.com/zhousiyuan12138/compuational_physics_N2015301020051/blob/master/1.jpg)
-## 姓名：周思源 学号：2015301020051
+## 姓名：周思源 学号：2015301020051 班级：材料物理班
 
 ## Homework_1
 - [x] [拼出自己的名字](https://github.com/zhousiyuan12138/compuational_physics_N2015301020051/blob/master/Exercise_01.md)
