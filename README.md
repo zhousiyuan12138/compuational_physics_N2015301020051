@@ -12,6 +12,6 @@
 - [x] [exercise 1.2 from the textbook](https://github.com/zhousiyuan12138/compuational_physics_N2015301020051/tree/master/Exercise%2003)
 
 ## Homework_4
-- [x] [exercise 1.6 form the textbook]()
+- [x] [exercise 1.6 form the textbook](https://github.com/zhousiyuan12138/compuational_physics_N2015301020051/tree/master/Exercise%2004)
 
 ![photo](https://github.com/zhousiyuan12138/compuational_physics_N2015301020051/blob/master/2.jpg)
