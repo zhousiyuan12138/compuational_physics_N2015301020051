@@ -1,4 +1,5 @@
 ```python
+
 import numpy as np
 import matplotlib.pyplot as plt
 def draw_pic(a,b,N0):
@@ -90,4 +91,5 @@ b = raw_input('input b:')
 N0 = raw_input('input N0:')
 
 draw_pic(a,b,N0)
-```
+
+···
