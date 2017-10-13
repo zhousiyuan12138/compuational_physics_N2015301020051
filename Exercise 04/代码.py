@@ -1,95 +1,193 @@
 ```python
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Oct 13 21:19:06 2017
 
-import numpy as np
+@author: Jiang Qi
+"""
+
+
+
 import matplotlib.pyplot as plt
-def draw_pic(a,b,N0):
 
-    a = float(a)
+import math
 
-    b = float(b)
+g=9.8
 
-    N0 = float(N0)
+B2m=0.00004
 
-    N=[]
+a=0.0065
 
-    N.append(N0)
+T0=300
+
+Alpha=2.5
+
+dt=0.01
+
+class cannon_trajectory:
 
     
 
-    if b == 0:
+    def __init__(self,x0,y0,v0,theta):
 
-        final = np.inf
+        self.x0=x0
 
-        max_t = 0.4
+        self.y0=y0
 
-    else:
+        self.v0=v0
 
-        final = a/b
+        self.theta=theta
 
-        max_t = np.log(final*9)/a
+        a=self.theta*math.pi/180
+
+        self.vx0=self.v0*math.cos(a)
+
+        self.vy0=self.v0*math.sin(a)
+
+    
+
+    def F_drag(self,v_x,v_y,y=1):
+
+        v=math.sqrt(v_x**2+v_y**2)
+
+        self.Fx=-B2m*v_x*v*(1-a*y/T0)**Alpha
+
+        self.Fy=-B2m*v_y*v*(1-a*y/T0)**Alpha
+
+        return self.Fx,self.Fy
+
+
+
+    def calculate(self):
+
+        self.x=[self.x0]
+
+        self.y=[self.y0]
+
+        self.vx=[self.vx0]
+
+        self.vy=[self.vy0]
+
+        self.t=[0]
+
+        while not(self.y[-1]<0):
+
+            
+
+            next_vx=self.vx[-1]-self.F_drag(self.vx[-1],self.vy[-1],self.y[-1])[0]*dt
+
+            next_vy=self.vy[-1]-g*dt-self.F_drag(self.vx[-1],self.vy[-1])[1]*dt
+
+            self.vx.append(next_vx)
+
+            self.vy.append(next_vy)
+
+            next_x=self.x[-1]+next_vx*dt 
+
+            next_y=self.y[-1]+next_vy*dt
+
+            self.x.append(next_x)
+
+            self.y.append(next_y)
+
+            
+
+        r=-self.y[-2]/self.y[-1]
+
+        self.x[-1]=(self.x[-2]+r*self.x[-1])/(r+1)
+
+        self.y[-1]=0
+
+    def plot(self,color):
+
+        plt.title("cannon_trajectory")
+
+        plt.xlabel("x/Km")
+
+        plt.ylabel("y/Km")
+
+        plt.plot(self.x,self.y,color,label="$v0=%dm/s$,$\\theta=%d\degree$"%(self.v0,self.theta))
 
         
 
-    t = np.linspace(0,max_t,1000)
+        
 
-    #Euler method 数值解
+        
 
-    for i in range(999):
+    
 
-        N_new = N[i]+(a*N[i]-b*N[i]**2)*t[1]
+        
 
-        N.append(N_new)
+A=cannon_trajectory(0,0,500,35)
 
-    #exact solution 解析解
+A.calculate()
 
-    n = (a*np.exp(a*t))/(a/N0-b+b*np.exp(a*t))          
+A.plot("red")
 
-    #绘图
+A=cannon_trajectory(0,0,500,36)
 
-    plt.figure(figsize=(10,6))
+A.calculate()
 
-    plt.plot(t,n,label="exact solution",color="green",linewidth=1)
+A.plot("blue")
 
-    plt.plot(t,N,label="Euler method",color="red",linewidth=3,linestyle='--')    
+A=cannon_trajectory(0,0,500,37)
 
-    plt.plot([0,1.0],[final,final],label='a/b : '+str(final),color='black',linewidth=1,linestyle="--")    
+A.calculate()
 
-    plt.xlabel("Time(t)")
+A.plot("yellow")
 
-    plt.ylabel("population(n)")
+A=cannon_trajectory(0,0,500,38)
 
-    plt.title("Population growth problems")
+A.calculate()
 
-    plt.axis([0,max_t,min(N)*0.9,max(N)*1.1])
+A.plot("pink")
 
-    plt.legend(loc='best')
+A=cannon_trajectory(0,0,500,39)
 
-    plt.savefig(str(a+b+N0)+'.png')
+A.calculate()
 
-    plt.show()
+A.plot("purple")
 
+A=cannon_trajectory(0,0,500,40)
 
+A.calculate()
 
-print 'when b=0, population growth curve'        
+A.plot("black")
 
-draw_pic(30,0,1000)
+A=cannon_trajectory(0,0,500,41)
 
-print 'when N0=10,a=10,b=3, population growth curve'
+A.calculate()
 
-draw_pic(10,3,10)
+A.plot("green")
 
-print 'when N0=1000,a=10,b=0.01, population growth curve'
+A=cannon_trajectory(0,0,500,42)
 
-draw_pic(10,0.01,1000)
+A.calculate()
 
-print 'Now you can draw your curve'
+A.plot("orange")
 
-a = raw_input('input a:')
+A=cannon_trajectory(0,0,500,43)
 
-b = raw_input('input b:')
+A.calculate()
 
-N0 = raw_input('input N0:')
+A.plot("brown")
 
-draw_pic(a,b,N0)
+A=cannon_trajectory(0,0,500,44)
+
+A.calculate()
+
+A.plot("gray")
+
+A=cannon_trajectory(0,0,500,45)
+
+A.calculate()
+
+A.plot("cyan")
+
+plt.legend(loc='upper right')
+
+plt.savefig("problem2.9.png")
+
+plt.show()
 
 ···
