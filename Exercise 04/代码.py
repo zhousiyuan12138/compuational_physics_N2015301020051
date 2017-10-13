@@ -1,13 +1,4 @@
 ```python
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Oct 13 21:19:06 2017
-
-@author: Jiang Qi
-"""
-
-
-
 import matplotlib.pyplot as plt
 
 import math
