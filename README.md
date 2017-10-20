@@ -12,7 +12,7 @@
 - [x] [exercise 1.2 from the textbook](https://github.com/zhousiyuan12138/compuational_physics_N2015301020051/tree/master/Exercise%2003)
 
 ## Homework_4
-- [x] [exercise 2.6 form the textbook](https://github.com/zhousiyuan12138/compuational_physics_N2015301020051/tree/master/Exercise%2004)
+- [x] [exercise 2.9 form the textbook](https://github.com/zhousiyuan12138/compuational_physics_N2015301020051/tree/master/Exercise%2004)
 
 ## Homework_5
 - [x] [exercise 2.19 form the textbook]
