@@ -20,4 +20,7 @@
 ## Homework_6
 - [x] [exercise 3.12 form the textbook](https://github.com/zhousiyuan12138/compuational_physics_N2015301020051/blob/master/Exercise%2006)
 
+## Homework_7
+- [x] [exercise 3.26 form the textbook](https://github.com/zhousiyuan12138/compuational_physics_N2015301020051/blob/master/Exercise%2007)
+
 ![photo](https://github.com/zhousiyuan12138/compuational_physics_N2015301020051/blob/master/2.jpg)
