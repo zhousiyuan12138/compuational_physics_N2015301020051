@@ -1,7 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Nov 01 15:18:43 2017
-
 ```python
 from numpy import * 
 import matplotlib.pyplot as plt
@@ -57,7 +53,7 @@ class LORENZ(object):
         else:
             print 'sec_y overranging'
             return 0
-'''
+
 # set r = 5.,15.,29.
 # plot z versus time
 fig= plt.figure(figsize=(8,8))
@@ -80,7 +76,7 @@ ax1.set_title('Lorenz Model: z versus time',fontsize=18)
 ax3.set_xlabel('time ',fontsize=18)
 ax2.set_ylabel('z ',fontsize=18)
 plt.show(fig)
-'''
+
 
 # plot phase space and section
 fig= plt.figure(figsize=(10,10))
@@ -119,7 +115,6 @@ plt.show(fig)
 
 
             
-'''
 #  change r(driving force)
 #  plot z vs t
 for r in range(30):
@@ -133,11 +128,7 @@ for r in range(30):
     ax1.set_title('z versus t')
     plt.legend(loc='best')
     plt.savefig('C:\\Users\\ChenYangyao\\Desktop\\pic_ch3_lorenz\\z_t\\r_%.2f.png'%cmp.r)
-'''
 
-
-
-'''
 #  change r(driving force)
 #  plot phase zx, xy, yz
 for r in range(20,30,1):
@@ -183,11 +174,7 @@ for r in linspace(25,50,100):
     ax1.set_ylim(0,80)
     ax1.legend(loc='best')
     plt.savefig('C:\\Users\\ChenYangyao\\Desktop\\pic_ch3_lorenz\\section\\r_%.2f.png'%r)
-'''
 
-
-
-'''
 #  change y(driving force)
 #  plot section z vs x
 cmp=LORENZ(28,0.001,1000)
@@ -203,5 +190,5 @@ for secy in linspace(-30,30,60):
     ax1.set_ylim(5,40)
     ax1.legend(loc='best')
     plt.savefig('C:\\Users\\ChenYangyao\\Desktop\\pic_ch3_lorenz\\butter\\secy_%.2f.png'%secy)
-'''
+```
  
