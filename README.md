@@ -26,4 +26,9 @@
 ## Homework_8
 - [x] [exercise 3 form the textbook](https://github.com/zhousiyuan12138/compuational_physics_N2015301020051/tree/master/Exercise%2008)
 
+## 期中
+
+## Homewrok_9
+- [x] [exercise 4.16 form the textbook]()
+
 ![photo](https://github.com/zhousiyuan12138/compuational_physics_N2015301020051/blob/master/2.jpg)
