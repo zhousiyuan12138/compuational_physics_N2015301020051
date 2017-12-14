@@ -32,6 +32,6 @@
 - [x] [exercise 4.16 form the textbook](https://github.com/zhousiyuan12138/compuational_physics_N2015301020051/blob/master/Exercise%2009)
 
 ## Homewrok_10
-- [x] [exercise  form the textbook](https://github.com/zhousiyuan12138/compuational_physics_N2015301020051/blob/master/Exercise%2010)
+- [x] [exercise 5.2 form the textbook](https://github.com/zhousiyuan12138/compuational_physics_N2015301020051/blob/master/Exercise%2010)
 
 ![photo](https://github.com/zhousiyuan12138/compuational_physics_N2015301020051/blob/master/2.jpg)
