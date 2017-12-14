@@ -34,4 +34,7 @@
 ## Homewrok_10
 - [x] [exercise 5.2 form the textbook](https://github.com/zhousiyuan12138/compuational_physics_N2015301020051/blob/master/Exercise%2010)
 
+## Homewrok_11
+- [x] [exerciseform the textbook]()
+
 ![photo](https://github.com/zhousiyuan12138/compuational_physics_N2015301020051/blob/master/2.jpg)
